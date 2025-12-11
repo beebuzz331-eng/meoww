@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #ffeef6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        background: white;
+        width: 330px;
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        animation: fadeIn 1.5s ease;
+    }
+
+    .gif {
+        width: 200px;      /* adjust size here */
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    .heart {
+        font-size: 45px;
+        animation: beat 1s infinite ease-in-out;
+    }
+
+    @keyframes beat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ff8fb6;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ff6ea2;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <!-- ⭐ Add your cute GIF here -->
+    <img src="https://i.pinimg.com/originals/30/73/1d/30731df1cdd458e17e2146a90d7c6b7c.gif" class="gif" alt="Cute Gif">
+
+   
+    <h2>Hey kuchupuchu,</h2>
+    <p>i heard you're cute nd sweet.. <br> can i have a bite? <br> <br> pleashhh😩</p>
+    
+
+    <button class="btn" onclick="alert('You’re special, yummy nd the love of my life . Don’t forget that 💗')">
+        Click Me
+    </button>
+</div>
+
+</body>
+</html>
